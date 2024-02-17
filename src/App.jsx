@@ -1,8 +1,8 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
-import Dashboard from './components/shared/Dashboard'
-import ProtectedRoute from './components/ProtectedRoute'
+import Dashboard from './components/Dashboard'
+import ProtectedRoute from './ProtectedRoute'
 import SignUp from './pages/SignUp'
 import Products from './pages/Products'
 import Orders from './pages/Orders'

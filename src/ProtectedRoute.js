@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
-import { Authenticated } from '../lib/constants'
+import { Authenticated } from './lib/constants'
 const ProtectedRoute = ({ children }) => {
     const isAuthenticated  = Authenticated;
 // const isAuthenticated=true
@@ -8,7 +8,7 @@ const ProtectedRoute = ({ children }) => {
     console.log('isAuthenticated', isAuthenticated)
 
     if (!isAuthenticated) {
-        return <Navigate to="/login" state={{ from: location }} replace />
+        return <Navigate to="/" state={{ from: location }} replace />
     }
  
 

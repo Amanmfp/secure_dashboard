@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Sidebar from './Sidebar'
-import Header from './Header'
+import Sidebar from './shared/Sidebar'
+import Header from './shared/Header'
 
 export default function Dashboard() {
     return (
